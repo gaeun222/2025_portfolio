@@ -1,0 +1,100 @@
+/* 노말라이즈 */
+body, ul, li, h1, h2, h3, span, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('./fonts/Paperlogy-5Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Paperlogy';
+    src: url('./fonts/Paperlogy-6SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'Paperlogy', sans-serif;
+    font-weight: 500;
+    background-color: #f0f0f0;
+  }
+  
+/* 라이브러리 */
+.r {
+    border: 2px solid red;
+}
+.g {
+    border: 1px solid green;
+}
+.b {
+    border: 1px solid blue;
+}
+.o {
+    border: 1px solid orange;
+}
+.p {
+    border: 1px solid purple;
+}
+
+
+/* ========= 커스텀 ============ */
+/* .load {
+    height: 950px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* ----- top-bar start ------ */
+.top-bar {
+    height: 80px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar > .right-box {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.top-bar > .right-box > div {
+    margin-left: 55px;
+}
+
+.top-bar > .logo {
+    font-weight: 600;
+}
+
+.top-bar > .right-box > .cont {
+    width: 144px; height: 39px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+}
+
+/* --------- main start ---------- */
+.main > .main_img {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.main > .main_img > img {
+    width: 1772px;
+    height: 315px;
+}
