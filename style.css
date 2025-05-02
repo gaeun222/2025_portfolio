@@ -57,12 +57,14 @@ a {
 } */
 
 /* ----- top-bar start ------ */
+
 .top-bar {
     height: 80px;
     padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #111;
 }
 
 .top-bar > .right-box {
@@ -89,12 +91,88 @@ a {
 }
 
 /* --------- main start ---------- */
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .main > .main_img {
+    margin: 0 50px;
     text-align: center;
-    margin-top: 90px;
+    padding-top: 90px;
 }
 
 .main > .main_img > img {
     width: 1772px;
     height: 315px;
+}
+
+  /* 기존 유지 */
+  .flow-txt {
+    flex-grow: 1;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  .flow-txt .out {
+    color: #f0f0f0;
+    text-shadow:
+      1px 1px 0px #111,
+      -1px 1px 0px #111,
+      1px -1px 0px #111,
+      -1px -1px 0px #111;
+  }
+
+  /* --- flow효과 --- */
+.marquee-wrap {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .marquee-item {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 40px;
+    opacity: 0; /* 처음엔 안 보이게 */
+    animation: fade-slide 10s linear infinite;
+    animation-fill-mode: both;
+  }
+  
+  /* 개별 지연 */
+  .delay-0 { animation-delay: 0s; }
+  .delay-1 { animation-delay: 1.5s; }
+  .delay-2 { animation-delay: 3s; }
+  .delay-3 { animation-delay: 4s; }
+  
+  /* 수직 위치 조절 */
+  .top-1 { top: 74px; }
+  .top-2 { top: 126px; }
+  .top-3 { top: 157px; }
+  .top-4 { top: 204px; }
+
+  @keyframes fade-slide {
+    0% {
+      left: 100%;
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    100% {
+      left: -100%;
+      opacity: 1;
+    }
+  }
+  /* --- flow효과 end --- */
+
+.main > .bottom-txt {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-between;
+    padding-bottom: 55px;
 }
