@@ -10,6 +10,13 @@ a {
 }
 
 @font-face {
+  font-family: 'Paperlogy';
+  src: url('./fonts/Paperlogy-4Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
     font-family: 'Paperlogy';
     src: url('./fonts/Paperlogy-5Medium.ttf') format('truetype');
     font-weight: 500;
@@ -20,6 +27,13 @@ a {
     font-family: 'Paperlogy';
     src: url('./fonts/Paperlogy-6SemiBold.ttf') format('truetype');
     font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Paperlogy';
+    src: url('./fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
   }
 
@@ -48,17 +62,37 @@ a {
 
 
 /* ========= 커스텀 ============ */
-/* .load {
+.load {
     height: 950px;
     background-color: #f0f0f0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-} */
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.load_txt > p {
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.load_per {
+  font-size: 80px;
+  margin-top: 30px;
+}
 
 /* ----- top-bar start ------ */
 
 .top-bar {
+  position: fixed;
+  left: 0; top: 0;
+  box-sizing: border-box;
+  z-index: 999;
+  width: 100%;
+  max-width: 100vw;   
     height: 80px;
     padding: 0 50px;
     display: flex;
