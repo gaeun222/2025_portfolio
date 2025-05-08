@@ -8,6 +8,8 @@ a {
     color: inherit;
     text-decoration: none;
 }
+/* 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/Pretendard@v1.3.9/dist/web/static/variable/PretendardVariable.css');
 
 @font-face {
   font-family: 'Paperlogy';
@@ -32,15 +34,28 @@ a {
 
   @font-face {
     font-family: 'Paperlogy';
+    src: url('./fonts/Paperlogy-7Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Paperlogy';
     src: url('./fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
   }
 
+  :root {
+    --font-paper: 'Paperlogy', sans-serif;
+    --font-preten: 'pretendard Variable', sans-serif;
+  }
+
   body {
-    font-family: 'Paperlogy', sans-serif;
+    font-family: var(--font-paper);
     font-weight: 500;
     background-color: #f0f0f0;
+    color: #111;
   }
   
 /* 라이브러리 */
@@ -99,7 +114,8 @@ a {
     align-items: center;
     justify-content: space-between;
     color: #111;
-}
+    background: linear-gradient(180deg, rgba(240,240,240,1) 50%, rgba(240,240,240,.8) 70%, rgba(240,240,240,0) 100% );
+  }
 
 .top-bar > .right-box {
     display: flex;
@@ -169,7 +185,7 @@ a {
   .marquee-item {
     position: absolute;
     white-space: nowrap;
-    font-size: 40px;
+    font-size: 38px;
     opacity: 0; /* 처음엔 안 보이게 */
     animation: fade-slide 10s linear infinite;
     animation-fill-mode: both;
@@ -209,4 +225,76 @@ a {
     font-size: 20px;
     justify-content: space-between;
     padding-bottom: 55px;
+}
+
+/* ------ what start ------ */
+.what {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 190px;
+  height: 100vh;
+  padding: 0 200px 0 300px;
+}
+
+.what > .ques > img {
+  width: 400px; height: 328px;
+}
+
+.balloon-1, .balloon-2 {
+  position: relative;
+}
+
+.balloon-2 {
+  margin-top: 35px;
+  margin-left: 35px;
+}
+
+.what .balloon-1 > img {
+  width: 550px; height: 142px;
+}
+
+.what .balloon-2 > img {
+  width: 762px; height: 398px;
+}
+
+.what .balloon-1 p {
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  top: 38px; left: 65px;
+}
+
+.what .balloon-2 p {
+  font-family: var(--font-preten);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  top: 65px; left: 80px;
+}
+
+/* ------ recent start ------ */
+.recent {
+  width: 100%; height: 100vh;
+  padding: 90px 0 0 100px;
+}
+
+.recent > .recent-tit {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.recent > p {
+  font-family: var(--font-preten);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.recent .recent-kr {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #999;
+  line-height: 16px;
 }
