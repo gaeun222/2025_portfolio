@@ -26,6 +26,16 @@
     <!-- AOS 연결 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- accodian 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- dm serif display 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+
   </head>
 
   <body>
@@ -138,11 +148,91 @@
     </section>
 
     <div class="recent-page">
-      <div class="page-1"></div>
-      <div class="page-2"></div>
-      <div class="page-3"></div>
+      <div class="page page-1">
+        <img src="/images/lumenia.png" alt="">
+        <div class="txt-box">
+          <div class="num dm-serif-italic">01</div>
+          <div class="tit">LUMENIA</div>
+          <div class="tit-2">BI / Web Desgin - Creative</div>
+          <div class="ex">필름 브랜드인 LUMENIA의 BI와 웹사이트를 디자인 하였다.
+            <br>LUMENIA는 "빛을 담는 필름"이라는 브랜드 철학을 기반으로, 아날로그의 따뜻함과 현대적인 감성을 함께 전달한다.
+            <br>
+            <br>브랜드가 지향하는 빛과 색, 아날로그 감성에 대한 메세지를 간결한 문장으로 전달하며,
+            <br>스크롤만으로 흐름이 유도되며, 사용자가 브랜드를 이해하고 느끼도록 설계하였다.
+            <br>단순한 제품 소개를 넘어 브랜드의 철학, 분위기, 등을 함께 보여주는 구조로, 브랜드 소개 페이지로서도 기능한다.</div>
+          <div class="btn">VIEW MORE</div>
+        </div>
+      </div>
+
+      <div class="page page-2">
+        <img src="/images/dajeon.png" alt="">
+        <div class="txt-box">
+          <div class="num dm-serif-italic">02</div>
+          <div class="tit">대전시립무용단</div>
+          <div class="tit-2">Web Redesgin / Publishing</div>
+          <div class="ex">
+            대전시립무용단의 반응형 Website를 리디자인 및 퍼블리싱 하였다.
+<br>기존의 복잡한 레이아웃에서, 레이아웃 재배치를 통해 정보 밀도를 분산시키고, 섹션별로 나누어 간결한 정보만을 전달한다.
+<br>
+<br>또한 인터렉티브 요소를 추가하여 사용자의 흥미를 유발하였고, 
+<br>반응형 디자인으로 제작하여 모바일 환경에서도 사용할 수 있도록 제작하였다.
+          </div>
+          <div class="btn">VIEW MORE</div>
+        </div>
+      </div>
+
+      <div class="page page-3">
+        <img src="/images/hm.png" alt="">
+        <div class="txt-box">
+          <div class="num dm-serif-italic">03</div>
+          <div class="tit">H&M</div>
+          <div class="tit-2">Web Redesgin</div>
+          <div class="ex">
+            기존보다 더 직관적이고 쇼핑에 최적화된 UX를 제공하며, 브랜드 중심의 기존 웹사이트에서
+            <br>쇼핑 경험 중심의 웹사이트로 리디자인 하였다.
+            <br>이를 위해 쇼핑 유도 요소 강화 (버튼), 레이아웃 재배치를 통한 정보 제공 확대, 다양한 상품 노출을 통한 
+            <br>정보 밀도 증가로 쇼핑 편의성 개선, 브랜드 컬러 활용을 통한 시각적 흥미 유도 등을 중점으로 디자인하였다.
+            <br>이를 통해 사용자가 더 쉽고 편하게 원하는 제품을 빠르게 찾을 수 있을 것이라고 예상된다.
+          </div>
+          <div class="btn">VIEW MORE</div>
+        </div>
+      </div>
+
     </div>
 
     <!-- project -->
+     <section class="project">
+      <div class="pro-tit">project</div>
+      <div class="accordian">
+        <div id="Accordion_wrap">
+          <div class="que">
+            <div class="que-t1">01</div>
+           <div class="que-t2">WEB DESIGN</div>
+           <div class="que-t3">Redesign, Creative, Figma</div>
+            <div class="arrow-wrap">
+              <span class="arrow-top"><img src="/images/minus.png" alt=""></span>
+             <span class="arrow-bottom"><img src="/images/plus.png" alt=""></span>
+            </div>
+           
+          </div>
+          <div class="anw">
+           <span>This is first answer.</span>
+          </div>
+           <div class="que">
+           <span>This is second question.</span>
+          </div>
+          <div class="anw">
+           <span>This is second answer.</span>
+          </div>
+           <div class="que">
+           <span>This is third question.</span>
+          </div>
+          <div class="anw">
+           <span>This is third answer.</span>
+          </div>
+     </div>
+      </div>
+     </section>
+
   </body>
 </html>

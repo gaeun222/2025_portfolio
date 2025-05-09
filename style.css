@@ -14,9 +14,23 @@ img {
 }
 
 /* 폰트 */
+/* pretendard */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/Pretendard@v1.3.9/dist/web/static/variable/PretendardVariable.css');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;700&display=swap');
 
+/* DM-serif */
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Paperlogy */
 @font-face {
   font-family: 'Paperlogy';
   src: url('./fonts/Paperlogy-4Regular.ttf') format('truetype');
@@ -52,10 +66,11 @@ img {
     font-style: normal;
   }
 
+  /* 폰트 변수 */
   :root {
     --font-paper: 'Paperlogy', sans-serif;
     --font-preten: 'pretendard Variable', sans-serif;
-    --font-dm-serif: 'DM Serif Display', serif;
+    --dm-serif-italic: 400 italic 1rem/1.4 "DM Serif Display", serif;
   }
 
   body {
@@ -305,3 +320,159 @@ img {
   line-height: 16px;
 }
 
+/* recent-page > page 공통 */
+.recent-page > .page {
+  height: 100vh;
+  display: flex;
+  color: #fff;
+}
+
+.recent-page > .page img {
+  height: 100vh;
+}
+
+/* recent-page 배경색 */
+.recent-page > .page-1 {
+  background-color: #382D23;
+}
+
+.recent-page > .page-2 {
+  background-color: #8E191F;
+}
+
+.recent-page > .page-3 {
+  background-color: #511C1E;
+}
+
+/* recent-page 텍스트 */
+.page > .txt-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 55px;
+}
+.page > .txt-box > .num {
+  font-size: 70px;
+}
+
+.page > .txt-box > .tit {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.page > .txt-box > .tit-2 {
+  font-family: var(--font-preten);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.page > .txt-box > .ex {
+  font-family: var(--font-preten);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -1.1%;
+  margin-bottom: 80px;
+}
+
+.page > .txt-box > .btn {
+  font-size: 16px;
+  font-weight: 300;
+  border: 1px solid #fff;
+  border-radius: 200px;
+  padding: 15px 30px;
+  width: fit-content;
+}
+
+.page > .txt-box > .btn:hover {
+  background-color: #ffffff50;
+  transition: .3s;
+}
+
+
+/* ------ project 시작 ------ */
+.project {
+  height: 100vh;
+  display: flex;
+  padding: 150px 100px; 
+  gap: 280px;
+}
+
+.pro-tit {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.accordian {
+  flex-grow: 1;
+}
+
+.que:first-child{
+		border-top: 1px solid #555;
+	}
+	
+.que{
+  display: flex;
+  align-items: center;
+	position: relative;
+	padding: 40px 50px;
+	cursor: pointer;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+}
+
+.que > .que-t1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-right: 200px;
+}
+
+.que > .que-t2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 200px;
+}
+
+.que > .que-t3 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-right: 250px;
+}
+
+.que.on>.que-t2{
+	font-weight: bold;
+}
+	
+.anw {
+	display: none;
+    overflow: hidden;
+	font-size: 14px;
+	background-color: #f4f4f2;
+	padding: 27px 0;
+}
+
+.arrow-wrap {
+  position: absolute;
+  top:50%; right: 50px;
+  transform: translate(0, -50%);
+}
+
+.arrow-wrap img {
+  width: 38px; height: 38px;
+}
+
+.que .arrow-top {
+  display: none;
+}
+.que .arrow-bottom {
+  display: block;
+}
+.que.on .arrow-bottom {
+  display: none;
+}
+.que.on .arrow-top {
+  display: block; 
+}
