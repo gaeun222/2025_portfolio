@@ -33,35 +33,35 @@ img {
 /* Paperlogy */
 @font-face {
   font-family: 'Paperlogy';
-  src: url('./fonts/Paperlogy-4Regular.ttf') format('truetype');
+  src: url('../fonts/Paperlogy-4Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
     font-family: 'Paperlogy';
-    src: url('./fonts/Paperlogy-5Medium.ttf') format('truetype');
+    src: url('../fonts/Paperlogy-5Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Paperlogy';
-    src: url('./fonts/Paperlogy-6SemiBold.ttf') format('truetype');
+    src: url('../fonts/Paperlogy-6SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Paperlogy';
-    src: url('./fonts/Paperlogy-7Bold.ttf') format('truetype');
+    src: url('../fonts/Paperlogy-7Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Paperlogy';
-    src: url('./fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
+    src: url('../fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
   }
@@ -122,6 +122,7 @@ img {
 }
 
 /* ----- top-bar start ------ */
+/* ----- top-bar start ------ */
 
 .top-bar {
   position: fixed;
@@ -153,6 +154,7 @@ img {
     font-weight: 600;
 }
 
+/* ---- */
 .top-bar > .right-box > .cont {
     width: 144px; height: 39px;
     background-color: #ddd;
@@ -160,6 +162,69 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 200px;
+}
+
+.top-bar > .right-box > .cont img {
+  width: 16px; margin-left: 8px;
+}
+
+
+/* ------------- */
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-toggle {
+      width: 144px; height: 39px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+      border: none;
+      font-family: var(--font-paper);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .dropdown-toggle > img {
+      width: 16px;
+      margin-left: 8px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 60%;
+      right: 0;
+      background: #ddd;
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-radius: 20px 0px 20px 20px;
+      padding: 25px 30px;
+      z-index: -10;
+    }
+
+    .dropdown-menu li {
+      display: flex;
+      gap: 24px;
+    }
+
+.dropdown-menu li div {
+  font-family: var(--font-preten);
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-rotated {
+  transform: rotate(180deg); /* 아래쪽 화살표가 위로 회전 */
 }
 
 /* --------- main start ---------- */
@@ -397,8 +462,9 @@ img {
 .project {
   height: 100vh;
   display: flex;
-  padding: 150px 100px; 
+  padding: 200px 100px; 
   gap: 280px;
+  box-sizing: border-box;
 }
 
 .pro-tit {
@@ -427,19 +493,22 @@ img {
 .que > .que-t1 {
   font-size: 32px;
   font-weight: 500;
-  margin-right: 200px;
+  /* margin-right: 200px; */
+  width: 250px;
 }
 
 .que > .que-t2 {
   font-size: 28px;
   font-weight: 600;
-  margin-right: 200px;
+  /* margin-right: 200px; */
+  width: 375px;
 }
 
 .que > .que-t3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
-  margin-right: 250px;
+  /* margin-right: 250px; */
+  width: 550px;
 }
 
 .que.on>.que-t2{
@@ -447,12 +516,13 @@ img {
 }
 	
 .anw {
-	display: none;
     overflow: hidden;
 	padding: 22px 50px;
+  cursor: pointer;
 }
 
 .arrow-wrap {
+  width: 52px;
   position: absolute;
   top:50%; right: 50px;
   transform: translate(0, -50%);
@@ -477,23 +547,100 @@ img {
 
 
 .anw{
+  font-family: var(--font-preten);
+  font-size: 20px;
   display: flex;
   align-items: center;
 	position: relative;
+  border-bottom: 1px solid #ccc;
+  color: #333;
 }
 
-.anw > .anw-t1 img {
+.anw .anw-t1 {
+  /* margin-right: 230px; */
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 250px;
+}
+
+.anw .anw-t1 img {
   width: 14px; height: 12px;
 }
 
-.anw > .anw-t2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-right: 200px;
+.anw .anw-t2 {
+  font-weight: 500;
+  /* margin-right: 270px; */
+  width: 375px;
 }
 
-.anw > .anw-t3 {
-  font-size: 24px;
+.anw .anw-t3 {
   font-weight: 300;
-  margin-right: 250px;
+  /* margin-right: 250px; */
+}
+
+.anw .anw-t4 {
+  font-weight: 200;
+  font-size: 14px;
+  color: #999;
+}
+
+/* ------ continue start ------ */
+.continue {
+  height: 85vh;  
+  padding: 50px 100px;
+  box-sizing: border-box;
+}
+
+.continue > .sym {
+  text-align: end;
+}
+.continue > .sym > img {
+  width: 585px;
+}
+
+.continue > .con-txt {
+  margin-top: 45px;
+  font-family: "DM Serif Display", serif;
+  font-size: 150px;
+  font-style: italic;
+}
+
+/* ------ footer start ------ */
+footer {
+  display: flex;
+  height: 100px;
+  background-color: #111;
+  color: #fff;
+  justify-content: space-between;
+  padding: 0 110px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+footer > .t-box1 div{
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 8px;
+}
+
+footer > .t-box1 span{
+font-size: 14px;
+font-weight: 300;
+}
+
+footer > .t-box2 {
+  display: flex; 
+  font-size: 14px;
+  font-weight: 500;
+  flex-grow: 1;
+  padding-left: 100px;
+}
+
+footer > .t-box2 div {
+  padding: 0 50px;
+}
+
+footer > .t-box3 {
+  font-size: 14px;
+  font-weight: 400;
 }

@@ -1,0 +1,84 @@
+/* ------ profile start ------ */
+.prof {
+    height: 150vh;
+    margin-top: 80px;
+    padding: 0 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.prof-l {
+    padding-top: 70px;
+    position: fixed;
+}
+
+.prof-l > .name {
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.prof-l > .small {
+    display: flex;
+    font-family: var(--font-preten);
+    font-size: 18px;
+    font-weight: 400;
+    gap: 120px;
+    margin-top: 30px;
+}
+
+.prof-l .prof-sym {
+    position: fixed;
+    top: 230px;
+    left: 555px;
+}
+
+.prof-l .prof-sym img {
+    width: 280px;
+}
+
+.prof-l .scroll {
+    margin-top: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.prof-l .scroll img {
+    margin-left: 24px;
+    height: 34px;
+}
+
+.prof-r {
+    margin-left: 800px;
+    padding-top: 20px;
+}
+
+.prof-r .prof-r-con {
+    display: flex;
+    font-family: var(--font-preten);
+    line-height: 28px;
+    border-bottom: 1px solid #555;
+    padding: 45px 50px;
+}
+
+.prof-r .prof-con-tit {
+    width: 280px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.prof-r .prof-con {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.prof-r .prof-r-con .item {
+    width: 120px;
+}
+
+.prof-r .prof-r-con .tool-img img {
+    width: 47px; margin-right: 40px;
+}
+
+.prof-r .prof-r-con .site a {
+    margin-right: 100px;
+}

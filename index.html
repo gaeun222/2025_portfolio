@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2025 portfolio</title>
     <!-- css,js 연결 -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <script src="script.js" defer="defer"></script>
 
     <!-- 라이브러리 연결 -->
@@ -41,16 +41,28 @@
   <body>
     <!-- 시작 -->
     <header class="top-bar">
-      <div class="logo">PORTFOLIO</div>
-      <div class="right-box">
-        <div>PROJECT</div>
-        <div>PROFILE</div>
-        <div class="cont">
-          CONTACT
-          <span>con</span>
+  <div class="logo"><a href="index.html">PORTFOLIO</a></div>
+  <div class="right-box">
+    <div>PROJECT</div>
+    <div><a href="profile.html">PROFILE</a></div>
+    <div class="dropdown">
+      <button class="dropdown-toggle">CONTACT
+        <img src="/images/arrow_D.png" alt="" class="arrow-icon"></button>
+      <ul class="dropdown-menu">
+        <li>
+          <div>E-MAIL
+          <br>MOBILE
+            <br>INSTAGRAM
+          </div>
+            <div>srehke123@gmail.com
+          <br>+82) 010-3692-8415
+          <br>@rkdmsrla._.dd
         </div>
-      </div>
-    </header>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
     <!-- load -->
     <section class="load">
@@ -205,6 +217,7 @@
       <div class="pro-tit">project</div>
       <div class="accordian">
         <div id="Accordion_wrap">
+          <!-- 1타이틀 -->
           <div class="que">
             <div class="que-t1">01</div>
            <div class="que-t2">WEB DESIGN</div>
@@ -213,30 +226,109 @@
               <span class="arrow-top"><img src="/images/minus.png" alt=""></span>
              <span class="arrow-bottom"><img src="/images/plus.png" alt=""></span>
             </div>
-           
           </div>
+
+          <!-- 1답 -->
           <div class="anw">
             <div class="anw-t1"><img src="/images/arrow.png" alt=""></div>
-            <div class="anw-t2">대전시립무용단</div>
+            <a class="anw-t2">대전시립무용단</a>
+            <div class="anw-t3">Redesgin, Publishing</div>
+          </div>
+
+          <div class="anw">
+            <div class="anw-t1"><img src="/images/arrow.png" alt=""></div>
+            <a class="anw-t2">H&M</a>
+            <div class="anw-t3">Redesgin</div>
+          </div>
+
+          <div class="anw">
+            <div class="anw-t1"><img src="/images/arrow.png" alt=""></div>
+            <a class="anw-t2">LUMENIA FILM</a>
+            <div class="anw-t3">Creative Design, BI</div>
+          </div>
+
+          <!-- 2타이틀 -->
+          <div class="que">
+            <div class="que-t1">02</div>
+           <div class="que-t2">PUBLISHING</div>
+           <div class="que-t3">HTML, CSS, Java Script, VS code</div>
+            <div class="arrow-wrap">
+              <span class="arrow-top"><img src="/images/minus.png" alt=""></span>
+             <span class="arrow-bottom"><img src="/images/plus.png" alt=""></span>
+            </div>
+          </div>
+
+          <!-- 2답 -->
+          <div class="anw">
+            <div class="anw-t1"><img src="/images/arrow.png" alt=""></div>
+            <a class="anw-t2">대전시립무용단</a>
             <div class="anw-t3">Redesgin, Publishing</div>
           </div>
 
 
-           <div class="que">
-           <span>This is second question.</span>
+          <!-- 3타이틀 -->
+          <div class="que">
+            <div class="que-t1">03</div>
+           <div class="que-t2">APP DESIGN</div>
+           <div class="que-t3">UX / UI, GUI, Figma</div>
+            <div class="arrow-wrap">
+              <span class="arrow-top"><img src="/images/minus.png" alt=""></span>
+             <span class="arrow-bottom"><img src="/images/plus.png" alt=""></span>
+            </div>
           </div>
-          <div class="anw">
-           <span>This is second answer.</span>
+
+          <!-- 3답 -->
+          <!-- <div class="anw">
+            <div class="anw-t1"><img src="/images/arrow.png" alt=""></div>
+            <a class="anw-t2">대전시립무용단</a>
+            <div class="anw-t3">Redesgin, Publishing</div>
+          </div> -->
+
+                    <!-- 4타이틀 -->
+          <div class="que">
+            <div class="que-t1">04</div>
+           <div class="que-t2">OTHERS</div>
+           <div class="que-t3"></div>
+            <div class="arrow-wrap">
+              <span class="arrow-top"><img src="/images/minus.png" alt=""></span>
+             <span class="arrow-bottom"><img src="/images/plus.png" alt=""></span>
+            </div>
           </div>
-           <div class="que">
-           <span>This is third question.</span>
-          </div>
-          <div class="anw">
-           <span>This is third answer.</span>
-          </div>
+
+          <!-- 4답 -->
+          <!-- <div class="anw anw1">
+            <div class="anw-t1"><img src="/images/arrow.png" alt=""></div>
+            <a class="anw-t2">대전시립무용단</a>
+            <div class="anw-t3">Redesgin, Publishing</div>
+          </div> -->
+
      </div>
       </div>
      </section>
+
+     <section class="continue">
+      <div class="sym">
+        <img src="/images/symbol_l.png" alt="">
+      </div>
+      <div class="con-txt">
+        (To be continued..)
+      </div>
+     </section>
+
+
+     <footer>
+      <div class="t-box1">
+        <div>Kim Ga Eun</div>
+        <span>@2025 Portfolio</span>
+      </div>
+      <div class="t-box2">
+        <div>GITHUB</div>
+        <div>VELOG</div>
+        <div>TISTORY</div>
+        <div>RESUME</div>
+      </div>
+      <div class="t-box3">ⓒ2025 Kim Ga Eun All Rights Reserved.</div>
+     </footer>
 
   </body>
 </html>
