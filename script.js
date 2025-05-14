@@ -1,3 +1,4 @@
+// top-bar 드롭다운 -----------------
 $(".dropdown-toggle").click(function (e) {
     e.stopPropagation();
 
@@ -21,10 +22,42 @@ $(".dropdown-toggle").click(function (e) {
     e.stopPropagation();
   });
 
+  // AOS -------------------
 AOS.init({
     once: true,
   });
 
+  // recent works 시작 ---------------- 
+gsap.registerPlugin(ScrollTrigger);
+
+function SectionGroup__init() {
+    $(".section-group--stack-up").each(function (index, node) {
+        console.log(node)
+        var $group = $(node);
+        var $section = $group.find(" > .section:not(:first-child)");
+
+        $section.each(function (index, node) {
+            var $sectionOne = $(node);
+
+            gsap.to($sectionOne, {
+                ease: "none",
+                scrollTrigger: {
+                    trigger: $sectionOne,
+                    start: "top 100%",
+                    end: "bottom 100%",
+                    pin: $sectionOne.prev(),
+                    pinSpacing: false,
+                    scrub: true
+                }
+            });
+        });
+    });
+}
+
+SectionGroup__init();
+
+
+// 아코디언 메뉴 ---------------------
 $(document).ready(function() {
   $(".anw").hide(); // 모든 답변 숨기기
 

@@ -1,12 +1,19 @@
 /* 노말라이즈 */
-body, ul, li, h1, h2, h3, span, p{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+span,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -15,7 +22,7 @@ img {
 
 /* 폰트 */
 /* pretendard */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/Pretendard@v1.3.9/dist/web/static/variable/PretendardVariable.css');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/Pretendard@v1.3.9/dist/web/static/variable/PretendardVariable.css");
 
 /* DM-serif */
 .dm-serif-display-regular {
@@ -32,83 +39,82 @@ img {
 
 /* Paperlogy */
 @font-face {
-  font-family: 'Paperlogy';
-  src: url('../fonts/Paperlogy-4Regular.ttf') format('truetype');
+  font-family: "Paperlogy";
+  src: url("../fonts/Paperlogy-4Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'Paperlogy';
-    src: url('../fonts/Paperlogy-5Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Paperlogy';
-    src: url('../fonts/Paperlogy-6SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-  }
+  font-family: "Paperlogy";
+  src: url("../fonts/Paperlogy-5Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'Paperlogy';
-    src: url('../fonts/Paperlogy-7Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Paperlogy";
+  src: url("../fonts/Paperlogy-6SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'Paperlogy';
-    src: url('../fonts/Paperlogy-8ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Paperlogy";
+  src: url("../fonts/Paperlogy-7Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 
-  /* 폰트 변수 */
-  :root {
-    --font-paper: 'Paperlogy', sans-serif;
-    --font-preten: 'pretendard Variable', sans-serif;
-    --dm-serif-italic: 400 italic 1rem/1.4 "DM Serif Display", serif;
-  }
+@font-face {
+  font-family: "Paperlogy";
+  src: url("../fonts/Paperlogy-8ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
 
-  body {
-    font-family: var(--font-paper);
-    font-weight: 500;
-    background-color: #f0f0f0;
-    color: #111;
-  }
-  
+/* 폰트 변수 */
+:root {
+  --font-paper: "Paperlogy", sans-serif;
+  --font-preten: "pretendard Variable", sans-serif;
+  --dm-serif-italic: 400 italic 1rem/1.4 "DM Serif Display", serif;
+}
+
+body {
+  font-family: var(--font-paper);
+  font-weight: 500;
+  background-color: #f0f0f0;
+  color: #111;
+}
+
 /* 라이브러리 */
 .r {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 .g {
-    border: 1px solid green;
+  border: 1px solid green;
 }
 .b {
-    border: 1px solid blue;
+  border: 1px solid blue;
 }
 .o {
-    border: 1px solid orange;
+  border: 1px solid orange;
 }
 .p {
-    border: 1px solid purple;
+  border: 1px solid purple;
 }
-
 
 /* ========= 커스텀 ============ */
 .load {
-    height: 950px;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 400;
+  height: 950px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .load_txt > p {
@@ -126,91 +132,99 @@ img {
 
 .top-bar {
   position: fixed;
-  left: 0; top: 0;
+  left: 0;
+  top: 0;
   box-sizing: border-box;
   z-index: 999;
   width: 100%;
-  max-width: 100vw;   
-    height: 80px;
-    padding: 0 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #111;
-    background: linear-gradient(180deg, rgba(240,240,240,1) 50%, rgba(240,240,240,.8) 70%, rgba(240,240,240,0) 100% );
-  }
+  max-width: 100vw;
+  height: 80px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #111;
+  background: linear-gradient(
+    180deg,
+    rgba(240, 240, 240, 1) 50%,
+    rgba(240, 240, 240, 0.8) 70%,
+    rgba(240, 240, 240, 0) 100%
+  );
+}
 
 .top-bar > .right-box {
-    display: flex;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .top-bar > .right-box > div {
-    margin-left: 55px;
+  margin-left: 55px;
 }
 
 .top-bar > .logo {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /* ---- */
 .top-bar > .right-box > .cont {
-    width: 144px; height: 39px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 200px;
+  width: 144px;
+  height: 39px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
 }
 
 .top-bar > .right-box > .cont img {
-  width: 16px; margin-left: 8px;
+  width: 16px;
+  margin-left: 8px;
 }
-
 
 /* ------------- */
 .dropdown {
-      position: relative;
-      display: inline-block;
-    }
+  position: relative;
+  display: inline-block;
+}
 
-    .dropdown-toggle {
-      width: 144px; height: 39px;
-    background-color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 200px;
-      border: none;
-      font-family: var(--font-paper);
-      font-size: 16px;
-      font-weight: 500;
-    }
+.dropdown-toggle {
+  width: 144px;
+  height: 39px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  border: none;
+  font-family: var(--font-paper);
+  font-size: 16px;
+  font-weight: 500;
+}
 
-    .dropdown-toggle > img {
-      width: 16px;
-      margin-left: 8px;
-    }
+.dropdown-toggle > img {
+  width: 16px;
+  margin-left: 8px;
+}
 
-    .dropdown-menu {
-      position: absolute;
-      top: 60%;
-      right: 0;
-      background: #ddd;
-      display: none;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      border-radius: 20px 0px 20px 20px;
-      padding: 25px 30px;
-      z-index: -10;
-    }
+.dropdown-menu {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  background: #ddd;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px 0px 20px 20px;
+  padding: 25px 30px;
+  z-index: -10;
+}
 
-    .dropdown-menu li {
-      display: flex;
-      gap: 24px;
-    }
+.dropdown-menu li {
+  display: flex;
+  gap: 24px;
+}
 
 .dropdown-menu li div {
   font-family: var(--font-preten);
@@ -229,89 +243,102 @@ img {
 
 /* --------- main start ---------- */
 .main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main > .main_img {
-    margin: 0 50px;
-    text-align: center;
-    padding-top: 90px;
+  margin: 0 50px;
+  text-align: center;
+  padding-top: 90px;
 }
 
 .main > .main_img > img {
-    width: 1772px;
-    height: 315px;
+  width: 1772px;
+  height: 315px;
 }
 
-  /* 기존 유지 */
-  .flow-txt {
-    flex-grow: 1;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  
-  .flow-txt .out {
-    color: #f0f0f0;
-    text-shadow:
-      1px 1px 0px #111,
-      -1px 1px 0px #111,
-      1px -1px 0px #111,
-      -1px -1px 0px #111;
-  }
+/* 기존 유지 */
+.flow-txt {
+  flex-grow: 1;
+  font-size: 40px;
+  font-weight: 600;
+}
 
-  /* --- flow효과 --- */
+.flow-txt .out {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 0px #111, -1px 1px 0px #111, 1px -1px 0px #111,
+    -1px -1px 0px #111;
+}
+
+/* --- flow효과 --- */
 .marquee-wrap {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-  }
-  
-  .marquee-item {
-    position: absolute;
-    white-space: nowrap;
-    font-size: 38px;
-    opacity: 0; /* 처음엔 안 보이게 */
-    animation: fade-slide 20s linear infinite;
-    animation-fill-mode: both;
-  }
-  
-  /* 개별 지연 */
-  .delay-0 { animation-delay: 0s; }
-  .delay-1 { animation-delay: 3s; }
-  .delay-2 { animation-delay: 6s; }
-  .delay-3 { animation-delay: 8s; }
-  
-  /* 수직 위치 조절 */
-  .top-1 { top: 74px; }
-  .top-2 { top: 126px; }
-  .top-3 { top: 157px; }
-  .top-4 { top: 204px; }
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
 
-  @keyframes fade-slide {
-    0% {
-      left: 100%;
-      opacity: 0;
-    }
-    5% {
-      opacity: 1;
-    }
-    100% {
-      left: -100%;
-      opacity: 1;
-    }
+.marquee-item {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 38px;
+  opacity: 0; /* 처음엔 안 보이게 */
+  animation: fade-slide 20s linear infinite;
+  animation-fill-mode: both;
+}
+
+/* 개별 지연 */
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-1 {
+  animation-delay: 3s;
+}
+.delay-2 {
+  animation-delay: 6s;
+}
+.delay-3 {
+  animation-delay: 8s;
+}
+
+/* 수직 위치 조절 */
+.top-1 {
+  top: 74px;
+}
+.top-2 {
+  top: 126px;
+}
+.top-3 {
+  top: 157px;
+}
+.top-4 {
+  top: 204px;
+}
+
+@keyframes fade-slide {
+  0% {
+    left: 100%;
+    opacity: 0;
   }
-  /* --- flow효과 end --- */
+  5% {
+    opacity: 1;
+  }
+  100% {
+    left: -100%;
+    opacity: 1;
+  }
+}
+/* --- flow효과 end --- */
 
 .main > .bottom-txt {
-    margin: 0 50px;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    justify-content: space-between;
-    padding-bottom: 55px;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  justify-content: space-between;
+  padding-bottom: 55px;
 }
 
 /* ------ what start ------ */
@@ -325,10 +352,12 @@ img {
 }
 
 .what > .ques > img {
-  width: 400px; height: 328px;
+  width: 400px;
+  height: 328px;
 }
 
-.balloon-1, .balloon-2 {
+.balloon-1,
+.balloon-2 {
   position: relative;
 }
 
@@ -338,18 +367,21 @@ img {
 }
 
 .what .balloon-1 > img {
-  width: 550px; height: 142px;
+  width: 550px;
+  height: 142px;
 }
 
 .what .balloon-2 > img {
-  width: 762px; height: 398px;
+  width: 762px;
+  height: 398px;
 }
 
 .what .balloon-1 p {
   font-size: 40px;
   font-weight: 700;
   position: absolute;
-  top: 38px; left: 65px;
+  top: 38px;
+  left: 65px;
 }
 
 .what .balloon-2 p {
@@ -358,7 +390,18 @@ img {
   font-size: 18px;
   line-height: 22px;
   position: absolute;
-  top: 65px; left: 80px;
+  top: 65px;
+  left: 80px;
+}
+
+/* ------ recent start ------ */
+
+.section {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
 }
 
 /* ------ recent start ------ */
@@ -386,27 +429,27 @@ img {
 }
 
 /* recent-page > page 공통 */
-.recent-page > .page {
+.recent-page .page {
   height: 100vh;
   display: flex;
   color: #fff;
 }
 
-.recent-page > .page img {
+.recent-page .page img {
   height: 100vh;
 }
 
 /* recent-page 배경색 */
-.recent-page > .page-1 {
-  background-color: #382D23;
+.recent-page .page-1 {
+  background-color: #382d23;
 }
 
-.recent-page > .page-2 {
-  background-color: #8E191F;
+.recent-page .page-2 {
+  background-color: #8e191f;
 }
 
-.recent-page > .page-3 {
-  background-color: #511C1E;
+.recent-page .page-3 {
+  background-color: #511c1e;
 }
 
 /* recent-page 텍스트 */
@@ -454,15 +497,14 @@ img {
 
 .page > .txt-box > .btn:hover {
   background-color: #ffffff50;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 
 /* ------ project 시작 ------ */
 .project {
   height: 100vh;
   display: flex;
-  padding: 200px 100px; 
+  padding: 200px 100px;
   gap: 280px;
   box-sizing: border-box;
 }
@@ -476,18 +518,18 @@ img {
   flex-grow: 1;
 }
 
-.que:first-child{
-		border-top: 1px solid #555;
-	}
-	
-.que{
+.que:first-child {
+  border-top: 1px solid #555;
+}
+
+.que {
   display: flex;
   align-items: center;
-	position: relative;
-	padding: 40px 50px;
-	cursor: pointer;
-	font-size: 14px;
-	border-bottom: 1px solid #ccc;
+  position: relative;
+  padding: 40px 50px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
 }
 
 .que > .que-t1 {
@@ -511,25 +553,27 @@ img {
   width: 550px;
 }
 
-.que.on>.que-t2{
-	font-weight: bold;
+.que.on > .que-t2 {
+  font-weight: bold;
 }
-	
+
 .anw {
-    overflow: hidden;
-	padding: 22px 50px;
+  overflow: hidden;
+  padding: 22px 50px;
   cursor: pointer;
 }
 
 .arrow-wrap {
   width: 52px;
   position: absolute;
-  top:50%; right: 50px;
+  top: 50%;
+  right: 50px;
   transform: translate(0, -50%);
 }
 
 .arrow-wrap img {
-  width: 38px; height: 38px;
+  width: 38px;
+  height: 38px;
 }
 
 .que .arrow-top {
@@ -542,16 +586,15 @@ img {
   display: none;
 }
 .que.on .arrow-top {
-  display: block; 
+  display: block;
 }
 
-
-.anw{
+.anw {
   font-family: var(--font-preten);
   font-size: 20px;
   display: flex;
   align-items: center;
-	position: relative;
+  position: relative;
   border-bottom: 1px solid #ccc;
   color: #333;
 }
@@ -564,7 +607,8 @@ img {
 }
 
 .anw .anw-t1 img {
-  width: 14px; height: 12px;
+  width: 14px;
+  height: 12px;
 }
 
 .anw .anw-t2 {
@@ -586,7 +630,7 @@ img {
 
 /* ------ continue start ------ */
 .continue {
-  height: 85vh;  
+  height: 85vh;
   padding: 50px 100px;
   box-sizing: border-box;
 }
@@ -617,19 +661,19 @@ footer {
   align-items: center;
 }
 
-footer > .t-box1 div{
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 8px;
+footer > .t-box1 div {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
-footer > .t-box1 span{
-font-size: 14px;
-font-weight: 300;
+footer > .t-box1 span {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 footer > .t-box2 {
-  display: flex; 
+  display: flex;
   font-size: 14px;
   font-weight: 500;
   flex-grow: 1;
