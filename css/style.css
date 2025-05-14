@@ -127,7 +127,7 @@ body {
   margin-top: 30px;
 }
 
-/* ----- top-bar start ------ */
+
 /* ----- top-bar start ------ */
 
 .top-bar {
@@ -182,6 +182,10 @@ body {
   margin-left: 8px;
 }
 
+.top-bar > .right-box > div {
+  cursor: pointer;
+}
+
 /* ------------- */
 .dropdown {
   position: relative;
@@ -200,6 +204,7 @@ body {
   font-family: var(--font-paper);
   font-size: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .dropdown-toggle > img {
@@ -209,14 +214,14 @@ body {
 
 .dropdown-menu {
   position: absolute;
-  top: 60%;
+  top: 130%;
   right: 0;
   background: #ddd;
   display: none;
   list-style: none;
   margin: 0;
   padding: 0;
-  border-radius: 20px 0px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
   padding: 25px 30px;
   z-index: -10;
 }
@@ -500,6 +505,10 @@ body {
   transition: 0.3s;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 /* ------ project 시작 ------ */
 .project {
   height: 100vh;
@@ -553,14 +562,15 @@ body {
   width: 550px;
 }
 
-.que.on > .que-t2 {
+/* .que.on > .que-t2 {
   font-weight: bold;
-}
+} */
 
 .anw {
   overflow: hidden;
   padding: 22px 50px;
   cursor: pointer;
+  background-color: #eaeaea;
 }
 
 .arrow-wrap {

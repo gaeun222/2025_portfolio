@@ -28,12 +28,12 @@
 
 .prof-l .prof-sym {
   position: fixed;
-  top: 230px;
-  left: 555px;
+  top: 85px;
+  left: 570px;
 }
 
 .prof-l .prof-sym img {
-  width: 280px;
+  width: 230px;
 }
 
 .prof-l .scroll {
