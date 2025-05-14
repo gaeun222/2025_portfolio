@@ -692,6 +692,7 @@ footer > .t-box2 {
 
 footer > .t-box2 div {
   padding: 0 50px;
+  cursor: pointer;
 }
 
 footer > .t-box3 {
