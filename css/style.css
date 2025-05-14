@@ -688,11 +688,15 @@ footer > .t-box2 {
   font-weight: 500;
   flex-grow: 1;
   padding-left: 100px;
+  height: 100%;
 }
 
 footer > .t-box2 div {
-  padding: 0 50px;
+  margin: 0 50px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 footer > .t-box3 {
