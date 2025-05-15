@@ -22,12 +22,7 @@ $(".dropdown-toggle").click(function (e) {
     e.stopPropagation();
   });
 
-  // AOS -------------------
-AOS.init({
-    once: true,
-  });
-
-  // recent works 시작 ---------------- 
+// recent works 시작 ---------------- 
 gsap.registerPlugin(ScrollTrigger);
 
 function SectionGroup__init() {
@@ -66,4 +61,45 @@ $(document).ready(function() {
     $(this).toggleClass('on');
     $nextItems.stop().slideToggle(300);
   });
+});
+
+
+// 인트로 ---------------------
+$(document).ready(function () {
+  const $load = $(".load");
+  const $percent = $(".load_per");
+  let current = 0;
+
+  const interval = setInterval(function () {
+    current++;
+    $percent.text(current + "%");
+
+    if (current >= 100) {
+      clearInterval(interval);
+
+      setTimeout(function () {
+        $load.addClass("slide-up");
+
+        // slide-up 애니메이션 끝나고 실행
+        setTimeout(function () {
+          // 1. AOS 초기화
+          AOS.init({ once: true });
+
+          // 2. flow-txt 안 요소들 관련 작업 실행
+          startMarqueeText();
+        }, 400); // slide-up CSS 애니메이션 시간과 동일
+      }, 500);
+    }
+  }, 20);
+
+  // flow-txt 애니메이션 실행 함수
+  function startMarqueeText() {
+    // 예: 클래스 추가
+    $(".marquee-wrap").each(function (i) {
+      const $el = $(this);
+      setTimeout(() => {
+        $el.addClass("in"); // 또는 원하는 처리
+      }, 1000);
+    });
+  }
 });
