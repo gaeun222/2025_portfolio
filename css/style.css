@@ -528,7 +528,7 @@ body {
 
 /* ------ project 시작 ------ */
 .project {
-  height: 100vh;
+  height: 105vh;
   display: flex;
   padding: 200px 100px;
   gap: 280px;

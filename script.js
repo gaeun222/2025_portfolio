@@ -54,15 +54,37 @@ function SectionGroup__init() {
 SectionGroup__init();
 
 // 아코디언 메뉴 ---------------------
-$(document).ready(function () {
-  $(".anw").hide(); // 모든 답변 숨기기
+// $(document).ready(function () {
+//   $(".anw").hide(); // 모든 답변 숨기기
 
+//   $(".que").click(function () {
+//     let $nextItems = $(this).nextUntil(".que", ".anw");
+//     $(this).toggleClass("on");
+//     $nextItems.stop().slideToggle(300);
+//   });
+// });
+$(document).ready(function () {
+  // 처음에 모든 답변 숨김
+  $(".anw").hide();
+
+  // 아코디언 클릭 동작
   $(".que").click(function () {
-    let $nextItems = $(this).nextUntil(".que", ".anw");
-    $(this).toggleClass("on");
-    $nextItems.stop().slideToggle(300);
+    const $this = $(this);
+    const $answer = $this.nextUntil(".que", ".anw");
+
+    if ($this.hasClass("on")) {
+      $this.removeClass("on");
+      $answer.stop().slideUp(300);
+    } else {
+      $(".que").removeClass("on");
+      $(".anw").stop().slideUp(300);
+
+      $this.addClass("on");
+      $answer.stop().slideDown(300);
+    }
   });
 });
+
 
 // 인트로 ---------------------
 $(document).ready(function () {
@@ -103,5 +125,3 @@ $(document).ready(function () {
     });
   }
 });
-
-//  AOS.init();
