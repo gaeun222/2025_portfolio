@@ -85,6 +85,11 @@ body {
   font-weight: 500;
   background-color: #f0f0f0;
   color: #111;
+  cursor: none;
+}
+
+body, a, button, input, textarea, label, select {
+  cursor: none;
 }
 
 /* 라이브러리 */
@@ -103,6 +108,27 @@ body {
 .p {
   border: 1px solid purple;
 }
+
+/* 마우스 커서 */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #111;
+  border: 1px solid #f0f0f0;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+   transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, transform 0.05s ease; /* width, height, background-color 에 transition 추가 */
+}
+
+.custom-cursor.hover {
+  width: 30px;
+  height: 30px;
+  background-color: #111;
+}
+
 
 /* ========= 커스텀 ============ */
 .load {
@@ -194,9 +220,9 @@ body {
   margin-left: 8px;
 }
 
-.top-bar > .right-box > div {
+/* .top-bar > .right-box > div {
   cursor: pointer;
-}
+} */
 
 /* ------------- */
 .dropdown {
@@ -216,7 +242,7 @@ body {
   font-family: var(--font-paper);
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .dropdown-toggle > img {
@@ -522,9 +548,9 @@ body {
   transition: 0.3s;
 }
 
-.btn {
+/* .btn {
   cursor: pointer;
-}
+} */
 
 /* ------ project 시작 ------ */
 .project {
@@ -553,7 +579,7 @@ body {
   align-items: center;
   position: relative;
   padding: 40px 50px;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-size: 14px;
   border-bottom: 1px solid #ccc;
 }
@@ -586,7 +612,7 @@ body {
 .anw {
   overflow: hidden;
   padding: 22px 50px;
-  cursor: pointer;
+  /* cursor: pointer; */
   background-color: #eaeaea;
 }
 
@@ -708,9 +734,9 @@ footer > .t-box2 {
   height: 100%;
 }
 
-footer > .t-box2 div {
+footer > .t-box2 a {
   margin: 0 50px;
-  cursor: pointer;
+  /* cursor: pointer; */
   display: flex;
   align-items: center;
   height: 100%;

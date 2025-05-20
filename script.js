@@ -1,3 +1,25 @@
+// 마우스 커서 -----------
+const cursor = document.querySelector('.custom-cursor');
+
+// 마우스 움직일 때 커서 위치
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+});
+
+// pointer 커서가 필요한 요소 위에서 hover 효과 적용
+const pointerElements = document.querySelectorAll('a, button, .pointer-hover');
+
+pointerElements.forEach((el) => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('hover');
+  });
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
+});
+
+
 // top-bar 드롭다운 -----------------
 $(".dropdown-toggle").click(function (e) {
   e.stopPropagation();
@@ -54,15 +76,6 @@ function SectionGroup__init() {
 SectionGroup__init();
 
 // 아코디언 메뉴 ---------------------
-// $(document).ready(function () {
-//   $(".anw").hide(); // 모든 답변 숨기기
-
-//   $(".que").click(function () {
-//     let $nextItems = $(this).nextUntil(".que", ".anw");
-//     $(this).toggleClass("on");
-//     $nextItems.stop().slideToggle(300);
-//   });
-// });
 $(document).ready(function () {
   // 처음에 모든 답변 숨김
   $(".anw").hide();
