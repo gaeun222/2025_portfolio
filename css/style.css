@@ -200,8 +200,14 @@ body, a, button, input, textarea, label, select {
   margin-left: 55px;
 }
 
+.top-bar > .right-box > div:hover a {
+  /* text-decoration: underline; */
+   font-weight: 600;
+}
+
 .top-bar > .logo {
   font-weight: 600;
+  font-size: 18px;
 }
 
 /* ---- */
@@ -228,6 +234,11 @@ body, a, button, input, textarea, label, select {
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.dropdown:hover .dropdown-toggle {
+  /* text-decoration: underline; */
+  font-weight: 600;
 }
 
 .dropdown-toggle {
@@ -616,6 +627,11 @@ body, a, button, input, textarea, label, select {
   background-color: #eaeaea;
 }
 
+.anw:hover .anw-t2 {
+  text-decoration: underline;
+  /* font-weight: bold; */
+}
+
 .arrow-wrap {
   width: 52px;
   position: absolute;
@@ -740,6 +756,11 @@ footer > .t-box2 a {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+footer > .t-box2 a:hover {
+  text-decoration: underline;
+  /* font-weight: bold; */
 }
 
 footer > .t-box3 {
